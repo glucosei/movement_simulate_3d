@@ -19,7 +19,7 @@ g = 9.80665
 dt = 0.1
 t = 0
 
-angle = np.array([15, 30, 45, 60])    #각도들 리스트
+angle = np.array([0, 30, 50, 70])    #각도들 리스트
 throw_v = 20                          #던지는 속도
 trajectories = [[(0,0,0)] for i in range(len(angle))]   #위치 기록 (x,y,z)형식의 튜플이 시간과 각도에 따라 2차원으로 배열됨
 dones = np.zeros_like(angle, dtype=bool)                #각도별 도착 여부 리스트

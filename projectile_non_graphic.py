@@ -4,7 +4,7 @@ import math
 from mpl_toolkits.mplot3d import Axes3D
 
 g = 9.80665
-dt = 00000.1
+dt = 0.01
 num= 9000
 log=[0 for i in range(num+1)]
 
@@ -37,9 +37,9 @@ for i in range(10,num+1):
 
         trajectories.append((next_x, next_y, next_z))
     log[i]=distance     #최종 간 거리
-    print(w, distance)
+    print(w, distance*dt)
 print('#'*20)
-print(f"가장 멀리 갔을 때의 던진 각도: {log.index(max(log))/(num/90)}\n그 때 간 거리: {max(log):.2f}")
+print(f"가장 멀리 갔을 때의 던진 각도: {log.index(max(log))/(num/90)}도\n그 때 간 거리: {max(log)*dt:.2f}m")
 
 
 

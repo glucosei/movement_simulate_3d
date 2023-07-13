@@ -1,0 +1,3 @@
+import projectile_graphic
+
+projectile_graphic.projectile_graphic()

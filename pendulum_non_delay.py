@@ -6,7 +6,7 @@ import numpy as np
 #질량, 줄 길이 입력
 #
 
-h = 0.04
+h = 0.05
 t = v = 0
 x = 30*np.pi/180
 pen_fm = 0.01
@@ -71,7 +71,7 @@ while loopFlag:
 	x, v = solveODEusingRK4(t,x,v)
 	
 	if np.abs(bef2_v)<np.abs(bef_v) and np.abs(bef_v)>np.abs(v):
-		print("극대:", np.abs(bef_v))
+		print("속력의 극댓값:", np.abs(bef_v))
 		if np.abs(bef_v)<0.05:
 			loopFlag=False
 	updatedX = gndCenterX + penLength*np.sin(x)
@@ -88,4 +88,4 @@ while loopFlag:
 	#pygame.time.delay(40)
 	#pygame.display.flip()
 
-print(f"정지할 때 까지 걸린시간: {duration*0.04:.2f}")
+print(f"정지할 때 까지 걸린시간: {duration*0.05:.2f}")

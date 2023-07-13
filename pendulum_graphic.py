@@ -76,7 +76,7 @@ while loopFlag:
 	x, v = solveODEusingRK4(t,x,v)
 	
 	if np.abs(bef2_v)<np.abs(bef_v) and np.abs(bef_v)>np.abs(v):
-		print("극대:", np.abs(bef_v))
+		print("속력의 극대:", np.abs(bef_v))
 		if np.abs(bef_v)<0.05:
 			loopFlag=False
 	updatedX = gndCenterX + penLength*np.sin(x)

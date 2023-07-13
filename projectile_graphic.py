@@ -8,8 +8,8 @@ dt = 0.1
 t = 0
 
 angle = list(map(int,input("각도들(공백으로 구분): ").split()))
-throw_v_x = 15
-throw_v_z = 30
+throw_v_x = int(input("x축 방향으로의 속도: "))
+throw_v_z = int(input("z축 방향으로의 속도: "))
 throw_v = (throw_v_x**2+throw_v_z**2)**(1/2)
 print(throw_v)
 trajectories = [[(0, 0, 0)] for _ in range(len(angle))]

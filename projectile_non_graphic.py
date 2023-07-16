@@ -7,7 +7,7 @@ from mpl_toolkits.mplot3d import Axes3D
 def projectile_non_graphic():
     g = 9.80665
     dt = 0.01
-    num= 9000
+    num= int(90*(1/dt))
     log=[0 for i in range(num+1)]
 
     throw_v = float(input("초기 속도(m/s): "))
@@ -48,7 +48,7 @@ def projectile_non_graphic():
 
             trajectories.append((next_x, next_y, next_z))
         log[i]=distance     #최종 간 거리
-        print(w, distance*dt)
+        print(w, distance)
     print('#'*20)
     print(f"가장 멀리 갔을 때의 던진 각도: {log.index(max(log))/(num/90)}도\n그 때 간 거리: {max(log):.2f}m")
 

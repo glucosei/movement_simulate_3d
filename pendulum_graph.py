@@ -161,7 +161,7 @@ def pendulum_graph():
                 #pygame.time.delay(40)
                 #pygame.display.flip()
 
-            print(f"질량: {int(pen_m*10)}, 정지할 때 까지 걸린시간: {duration*0.05:.2f}")
+            print(f"질량: {int(pen_m*10)}, 정지할 때 까지 걸린시간: {duration*h:.2f}")
             result[0].append(int(pen_m*10))
             result[1].append(duration*0.05)
 

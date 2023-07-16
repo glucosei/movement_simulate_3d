@@ -94,7 +94,7 @@ def pendulum_graphic():
 		pygame.time.delay(delay)
 		pygame.display.flip()
 
-	print(f"정지할 때 까지 걸린시간: {duration*0.05:.2f}초")
+	print(f"정지할 때 까지 걸린시간: {duration*h:.2f}초")
 
 if __name__ == '__main__':
     pendulum_graphic()

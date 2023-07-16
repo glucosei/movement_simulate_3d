@@ -89,7 +89,7 @@ def pendulum_non_delay():
 		#pygame.time.delay(40)
 		#pygame.display.flip()
 
-	print(f"정지할 때 까지 걸린시간: {duration*0.05:.2f}")
+	print(f"정지할 때 까지 걸린시간: {duration*h:.2f}")
 
 if __name__ == '__main__':
     pendulum_non_delay()

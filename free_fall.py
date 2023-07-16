@@ -22,7 +22,7 @@ def free_fall():
         #ax.set_zlim(-1, 600)
 
         for i in range(len(balls)):
-            x, y = zip(trajectories[i])
+            x, y = zip(*trajectories[i])
             ax.scatter(x, y, label=balls[i])
         ax.legend()
 

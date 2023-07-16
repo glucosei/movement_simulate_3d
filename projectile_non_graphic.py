@@ -31,7 +31,7 @@ def projectile_non_graphic():
 
             
             last_x, last_y, last_z = trajectories[-1]
-            """
+            """0.1*dt
             next_x = last_x + throw_v_x * math.cos(w / 180 * np.pi) * t
             next_y = last_y + throw_v * math.sin(w / 180 * np.pi) * t - 0.5 * g * t**2
             next_z = last_z + throw_v_z * math.cos(w / 180 * np.pi) * t

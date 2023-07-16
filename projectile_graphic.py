@@ -58,7 +58,7 @@ def projectile_graphic():
 
         all_done = dones.all()
 
-        plt.pause(0.01)
+        plt.pause(0.1*dt)
         #print(t)
     for i in range(len(angle)):
         print(f"{angle[i]}도로 던졌을 때 간 거리: {((trajectories[i][-1][0]**2+trajectories[i][-1][2]**2)**(1/2)):.2f}m")
